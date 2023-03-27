@@ -1,0 +1,21 @@
+/* .con {
+  background: blue;
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+} */
+
+#container {
+  display: block;
+}
+
+.con {
+  display: flex;
+}
+
+.element {
+  background: blue;
+  width: 5px;
+  height: 5px;
+  border: 1px solid black;
+}
