@@ -24,8 +24,8 @@
 //   document.getElementById("container" + line).appendChild(element);
 //   if (j % 4 == 0) line++;
 // }
-
-for (i = 1; i <= 64; i++) {
+let number = prompt("Enter the number:");
+for (i = 1; i <= number; i++) {
   let con = document.createElement("div");
   con.classList.add("con");
   con.setAttribute("id", "container" + i);
@@ -33,10 +33,10 @@ for (i = 1; i <= 64; i++) {
 }
 
 let line = 1;
-let num = 64 * 64;
+let num = number * number;
 for (j = 1; j < num + 1; j++) {
   let element = document.createElement("div");
   element.classList.add("element");
   document.getElementById("container" + line).appendChild(element);
-  if (j % 64 == 0) line++;
+  if (j % number == 0) line++;
 }
